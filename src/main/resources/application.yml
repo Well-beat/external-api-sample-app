@@ -1,0 +1,16 @@
+wellbeat:
+  base.url: http://localhost:8080
+  integration:
+    input-queue: test-organisation-output-queue
+    output-queue: test-organisation-input-queue
+    pm-service-url: https://pm-dev.well-beat.com
+    token: <TOKEN>
+cloud:
+  aws:
+    stack:
+      auto: false
+    credentials:
+      accessKey: <ACCESS-KEY>
+      secretKey: <SECRET-KEY>
+    region:
+      static: eu-west-1
